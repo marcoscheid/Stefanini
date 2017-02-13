@@ -1,0 +1,44 @@
+# Stefanini
+
+The current work is a special delivery to Stefanini, submitted by [Marco Scheid](https://br.linkedin.com/in/marco-a-scheid).
+
+
+## Getting Started
+
+To execute the current project, you will need to have:
+
+  1. Necessary technologies
+
+   - Eclipse
+   - jdk 1.8+
+   - Tomcat 7 (servlet 3.x)
+   - Apache Maven 
+
+  2. Get the code and import into your workspace
+
+  3. Maven build
+  
+   - using CMD:
+        a) cd <workspace_path>\<project_folder>
+		b) mvn compile
+   - on Eclipse:
+		a) on project's root, right click the file pom.xml
+		b) navigate to "Run As"> "1 Maven Build"
+		c) The edit configuration will be prompted. On "Goals" field, type "eclipse:clean eclipse:eclipse"
+		d) Click on "Run" button.
+  
+  4. Add the project to the server
+    
+  5. Database configuration
+    
+   - This project is set to connect to a MySQL Database. Under src\main\webapp\WEB-INF there is the jdbc.properties file, currently pointing to database stefaninidb, on a localhost using the default MySQL port(3306).
+   
+   - The CRUD page is persisting 3 attributes of the User model(br.com.stefanini.model.User):
+   
+		-stefaniniId (int)
+		-stefaniniName (varchar)
+		-stefaniniDescription
+
+    in the table stefaninidb.stefanini
+  
+  6. Database configuration
